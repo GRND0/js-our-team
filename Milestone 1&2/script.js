@@ -31,33 +31,76 @@ const team = [
   },
 ];
 
-let nomi = listaDati() ;
-console.log(nomi);
-
-
-function listaDati() {
-  nomiTeam = "" ;
-for (let i = 0; i < team.length; i++) {
-  const nomiTeam = team[i];
-  console.log(nomiTeam.name);
-}
-return nomiTeam.name 
-
-} 
-
 
 for (let i = 0; i < team.length; i++) {
-  const ruoliTeam = team[i];
-  console.log(ruoliTeam.role);
+  document.getElementById("nomi").innerHTML += team[i].name + ', ';
+  document.getElementById("ruoli").innerHTML += team[i].role + ', ';
+  document.getElementById("immagini").innerHTML += team[i].image + ', ';
 }
 
 
-for (let i = 0; i < team.length; i++) {
-  const immagineTeam = team[i];
-  console.log(immagineTeam.image);
-}
 
-document.getElementById("nomi").innerHTML = nomi;
-document.getElementById("ruoli").innerHTML = ruoliTeam.role;
-document.getElementById("immagini").innerHTML = immagineTeam.image;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BOZZE VARIE
+/*let nomi = listaDati() ;
+console.log(nomi);*/
+
+
+/*function listaDati() {
+   let datiTeam = "" ;
+for (let i = 0; i < team.length; i++) {
+   datiTeam = team[i];
+  console.log(datiTeam.name, datiTeam.role, datiTeam.image);
+}
+return datiTeam;
+
+} */
+
+
+// let names = getInformation('name');
+
+// function getInformation(key = '') {
+//   let infos = [];
+//   for (let i = 0; i < team.length; i++) {
+//     let people = team[i];
+//     let dato = people[key];
+//     infos.push(dato);
+//   }
+
+//   return infos;
+// }
+
+
+
+// for (let i = 0; i < team.length; i++) {
+//   const ruoliTeam = team[i];
+//   console.log(ruoliTeam.role);
+// }
+
+
+// document.getElementById("nomi").innerHTML =  getInformation('name');
+// document.getElementById("ruoli").innerHTML =  getInformation('role');
+// document.getElementById("immagini").innerHTML =  getInformation('image');
 
